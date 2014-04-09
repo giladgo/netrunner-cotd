@@ -35,6 +35,7 @@ end
 gem 'faraday'
 gem 'awesome_print'
 gem 'spring', group: :development
+gem 'haml-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
