@@ -1,5 +1,6 @@
 class CardController < ApplicationController
   def cotd
-    @card = Card.offset(rand(Card.count)).first
+    @card = Card.cotd
+    ap @card
   end
 end

@@ -1,0 +1,14 @@
+!!! 5
+%html
+  %head
+    %title Netrunner Card of the Day
+    %meta{name:"viewport", content:"width=device-width, user-scalable=no"}
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+
+  %body
+    %header
+      Android COTD
+    %section
+      = yield

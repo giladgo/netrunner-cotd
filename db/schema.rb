@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140409141353) do
+ActiveRecord::Schema.define(version: 20140416145246) do
 
   create_table "cards", force: true do |t|
     t.string  "code"
@@ -39,6 +39,13 @@ ActiveRecord::Schema.define(version: 20140409141353) do
     t.string  "url"
     t.string  "imagesrc"
     t.string  "largeimagesrc"
+  end
+
+  create_table "selections", force: true do |t|
+    t.string   "card_code"
+    t.date     "when"
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
 end

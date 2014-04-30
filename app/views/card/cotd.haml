@@ -1,3 +1,11 @@
-%h1= @card.title
-%img{src: netrunner_img(@card.imagesrc)}
-%p= @card.text
+.container
+  %h1.card_title= @card.title
+  %h2.card_subtitle
+    = @card.card_type
+    - if @card.subtype.present?
+      = " - #{@card.subtype}"
+  %h3.card_faction{faction: @card.faction.downcase}
+    = @card.faction
+  %img.card_img{src: netrunner_img(@card.imagesrc)}
+  %pre.card_text
+    = raw fix_icons @card.text

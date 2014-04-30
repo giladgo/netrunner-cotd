@@ -1,3 +1,89 @@
-// Place all the styles related to the Card controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@font-face{
+  font-family: 'monkirta';
+  src: url('monkirta_pursuit_nc-webfont.eot');
+  src: url('monkirta_pursuit_nc-webfont.eot?#iefix') format('embedded-opentype'),
+  url('monkirta_pursuit_nc-webfont.woff') format('woff'),
+  url('monkirta_pursuit_nc-webfont.ttf') format('truetype'),
+  url('monkirta_pursuit_nc-webfont.svg#webfont') format('svg');
+}
+
+
+body {
+  color: #333;
+  font-family: Helvetica Neue, Helvetica, Arial;
+  margin: 0;
+  padding: 0;
+}
+
+pre {
+  font-family: Helvetica Neue, Helvetica, Arial;
+}
+
+header {
+  width: 100%;
+  background: linear-gradient(90deg, blue, white);
+  font-family: serif;
+  color: yellow;
+  font-size: 50px;
+  padding-left: 5px;
+  font-style: italic;
+  border-bottom: solid 1px black;
+}
+
+
+.card_title {
+  font-variant: small-caps;
+  font-family: serif;
+}
+.card_subtitle {
+  font-style: italic;
+}
+.card_text {
+  text-align: left;
+  width: 300px;
+  margin: 20px auto;
+  white-space: pre-line;
+  font-family: serif;
+}
+
+.container {
+  height: 100%;
+  text-align: center;
+}
+
+.card_img {
+  box-shadow: 0px 0px 15px #666;
+}
+
+
+.card_faction[faction="neutral"] {
+  color: #ccc;
+}
+
+.card_faction[faction="shaper"] {
+  color: #cfc;
+}
+
+.card_faction[faction="criminal"] {
+  color: #9be;
+}
+
+.card_faction[faction="anarch"] {
+  color: #ff744a;
+}
+
+.card_faction[faction="jinteki"] {
+  color: #ad5738;
+}
+
+.card_faction[faction="nbn"] {
+  color: #ff9;
+}
+
+.card_faction[faction="haas-bioroid"] {
+  color: #fcf;
+}
+
+.card_faction[faction="weyland consortium"] {
+  color: #ccc;
+}
