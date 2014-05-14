@@ -1,10 +1,10 @@
 @font-face{
   font-family: 'monkirta';
-  src: url('monkirta_pursuit_nc-webfont.eot');
-  src: url('monkirta_pursuit_nc-webfont.eot?#iefix') format('embedded-opentype'),
-  url('monkirta_pursuit_nc-webfont.woff') format('woff'),
-  url('monkirta_pursuit_nc-webfont.ttf') format('truetype'),
-  url('monkirta_pursuit_nc-webfont.svg#webfont') format('svg');
+  src: font-url('monkirta_pursuit_nc-webfont.eot');
+  src: font-url('monkirta_pursuit_nc-webfont.eot?#iefix') format('embedded-opentype'),
+  font-url('monkirta_pursuit_nc-webfont.woff') format('woff'),
+  font-url('monkirta_pursuit_nc-webfont.ttf') format('truetype'),
+  font-url('monkirta_pursuit_nc-webfont.svg#webfont') format('svg');
 }
 
 @mixin filter( $var ) {

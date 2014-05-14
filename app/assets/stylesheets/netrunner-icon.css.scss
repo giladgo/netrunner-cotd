@@ -1,10 +1,10 @@
 @font-face{
   font-family: 'netrunner-icon';
-  src: url('netrunner.eot');
-  src: url('netrunner.eot?#iefix') format('embedded-opentype'),
-  url('netrunner.woff') format('woff'),
-  url('netrunner.ttf') format('truetype'),
-  url('netrunner.svg#webfont') format('svg');
+  src: font-url('netrunner.eot');
+  src: font-url('netrunner.eot?#iefix') format('embedded-opentype'),
+  font-url('netrunner.woff') format('woff'),
+  font-url('netrunner.ttf') format('truetype'),
+  font-url('netrunner.svg#webfont') format('svg');
 }
 
 .icon {
