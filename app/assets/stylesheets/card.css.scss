@@ -21,6 +21,7 @@ html {
 body {
   color: #eef;
   font-family: Helvetica Neue, Helvetica, Arial;
+  font-weight: 100;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -37,6 +38,8 @@ body {
   background-size: 130%;
   background-position-x: center;
   background-position-y: 25%;
+  transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
   @include filter(blur(6px) brightness(0.25));
   &.card-type-ice { background-position-y: 75%; }
   &.card-type-asset { background-position-y: 18%; }
@@ -54,28 +57,36 @@ header {
   border-bottom: solid 1px black;
   background-color: rgba(200, 200, 200, 0.5);
   font-family: monkirta;
-  color: #150053;
+  color: #fff;
   text-align: center;
   padding: 10px;
   .sub-header {
     font-size: 30px;
+    color: #150053;
   }
 }
 
-
 .card_title {
   font-variant: small-caps;
-  font-family: serif;
+  font-size: 60px;
+  font-weight: 200;
+  margin: 35px;
 }
 .card_subtitle {
-  font-style: italic;
+  font-weight: 200;
+  .card_type {
+    font-size: 31px;
+    text-transform: uppercase;
+    font-family: monkirta;
+  }
 }
 .card_text {
-  text-align: left;
-  width: 300px;
+  text-align: justify;
+  max-width: 350px;
   margin: 20px auto;
   white-space: pre-line;
-  font-family: serif;
+  line-height: 170%;
+  font-size: 20px;
 }
 
 .container {

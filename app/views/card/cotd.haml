@@ -2,9 +2,9 @@
 .container
   %h1.card_title= @card.title
   %h2.card_subtitle
-    = @card.card_type
+    %span.card_type= @card.card_type
     - if @card.subtype.present?
-      = " - #{@card.subtype}"
+      %span.card_subtype= ": #{@card.subtype}"
   %h3.card_faction{faction: @card.faction.downcase}
     = @card.faction
   %img.card_img{src: netrunner_img(@card.imagesrc)}
