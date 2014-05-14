@@ -1,3 +1,4 @@
+.bg-img{class: "card-type-#{@card.card_type.downcase}"}
 .container
   %h1.card_title= @card.title
   %h2.card_subtitle
@@ -9,3 +10,5 @@
   %img.card_img{src: netrunner_img(@card.imagesrc)}
   %pre.card_text
     = raw fix_icons @card.text
+  :css
+    .bg-img { background-image: url(#{netrunner_img(@card.imagesrc)}); }

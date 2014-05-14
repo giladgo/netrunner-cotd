@@ -7,12 +7,40 @@
   url('monkirta_pursuit_nc-webfont.svg#webfont') format('svg');
 }
 
+@mixin filter( $var ) {
+	-webkit-filter: $var;
+	-moz-filter: $var;
+	-ms-filter: $var;
+	-o-filter: $var;
+	filter: $var;
+}
 
+html {
+  height: 100%;
+}
 body {
-  color: #333;
+  color: #eef;
   font-family: Helvetica Neue, Helvetica, Arial;
   margin: 0;
   padding: 0;
+  height: 100%;
+  background-color: #000;
+}
+
+.bg-img {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  background-size: 130%;
+  background-position-x: center;
+  background-position-y: 25%;
+  @include filter(blur(6px) brightness(0.25));
+  &.card-type-ice { background-position-y: 75%; }
+  &.card-type-asset { background-position-y: 18%; }
+  &.card-type-program { background-position-y: 18%; }
 }
 
 pre {
@@ -21,13 +49,17 @@ pre {
 
 header {
   width: 100%;
-  background: linear-gradient(90deg, blue, white);
-  font-family: serif;
-  color: yellow;
   font-size: 50px;
   padding-left: 5px;
-  font-style: italic;
   border-bottom: solid 1px black;
+  background-color: rgba(200, 200, 200, 0.5);
+  font-family: monkirta;
+  color: #150053;
+  text-align: center;
+  padding: 10px;
+  .sub-header {
+    font-size: 30px;
+  }
 }
 
 
@@ -52,7 +84,8 @@ header {
 }
 
 .card_img {
-  box-shadow: 0px 0px 15px #666;
+  box-shadow: 0px 0px 60px #fff;
+  border-radius: 16px;
 }
 
 
