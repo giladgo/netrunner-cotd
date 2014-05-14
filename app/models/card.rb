@@ -1,7 +1,6 @@
 class Card < ActiveRecord::Base
 
   def self.cotd
-    Selection.delete_all
     todays_card = Selection.of_today
     unless todays_card.present?
       random_card = Card.offset(rand(Card.count)).first
