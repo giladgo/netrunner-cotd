@@ -2,7 +2,7 @@
 .container
   %h1.card_title= @card.title
   %h2.card_subtitle
-    %span.card_type= @card.card_type
+    %span.card_type>= @card.card_type
     - if @card.subtype.present?
       %span.card_subtype= ": #{@card.subtype}"
   %h3.card_faction{faction: @card.faction.downcase}
