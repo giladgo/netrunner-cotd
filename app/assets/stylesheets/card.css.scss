@@ -15,18 +15,6 @@
 	filter: $var;
 }
 
-html {
-  height: 100%;
-}
-body {
-  color: #eef;
-  font-family: Helvetica Neue, Helvetica, Arial;
-  font-weight: 100;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: #000;
-}
 
 .bg-img {
   width: 100%;
@@ -50,21 +38,6 @@ pre {
   font-family: Helvetica Neue, Helvetica, Arial;
 }
 
-header {
-  width: 100%;
-  font-size: 50px;
-  padding-left: 5px;
-  border-bottom: solid 1px black;
-  background-color: rgba(200, 200, 200, 0.5);
-  font-family: monkirta;
-  color: #fff;
-  text-align: center;
-  padding: 10px;
-  .sub-header {
-    font-size: 30px;
-    color: #150053;
-  }
-}
 
 .card_title {
   font-variant: small-caps;
@@ -82,7 +55,8 @@ header {
 }
 .card_text {
   text-align: justify;
-  max-width: 350px;
+  min-width: 320px;
+  width: 40%;
   margin: 20px auto;
   white-space: pre-line;
   line-height: 170%;

@@ -1,0 +1,73 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+ html {
+   height: 100%;
+ }
+ body {
+   color: #eef;
+   font-family: Helvetica Neue, Helvetica, Arial;
+   font-weight: 100;
+   margin: 0;
+   padding: 0;
+   height: 100%;
+   background-color: #000;
+ }
+a {
+  color: white;
+  &:visited { color: white; }
+  &:active {color: white; }
+}
+
+header {
+  font-size: 50px;
+  @media (max-width: 660px) {
+    font-size: 40px;
+  }
+  @media (max-width: 530px) {
+    font-size: 30px;
+  }
+  @media (max-width: 410px) {
+    font-size: 25px;
+  }
+  border-bottom: solid 1px black;
+  background-color: rgba(200, 200, 200, 0.5);
+  font-family: monkirta;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  .sub-header {
+    font-size: 30px;
+    color: #150053;
+    @media (max-width: 530px) {
+      font-size: 20px;
+    }
+    @media (max-width: 410px) {
+      font-size: 15px;
+    }
+  }
+}
+
+
+footer {
+  text-align: center;
+  margin: 10px 0;
+  hr {
+    width: 75%;
+    max-width: 320px;
+    height: 1px;
+    border: 0;
+    background-color: #fff;
+  }
+}
