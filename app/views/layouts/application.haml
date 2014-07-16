@@ -11,8 +11,7 @@
     %header
       Netrunner Card of the Day
       .sub-header
-        For
-        = Date.today.strftime('%B %-d, %Y')
+        = yield :sub_header
     %section
       = yield
     %footer

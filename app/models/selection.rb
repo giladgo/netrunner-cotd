@@ -1,4 +1,5 @@
 class Selection < ActiveRecord::Base
+  belongs_to :card, foreign_key: :card_code, primary_key: :code
 
   def self.of_today
     Selection.where(when: Date.today).order(created_at: :desc).first
@@ -18,5 +19,9 @@ class Selection < ActiveRecord::Base
     selection = Selection.new(card_code: card_code, when: Date.today)
     selection.save!
     selection
+  end
+
+  def printable_when
+    self.when.strftime('%B %-d, %Y')
   end
 end

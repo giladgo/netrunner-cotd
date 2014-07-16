@@ -59,6 +59,21 @@ header {
   }
 }
 
+.previous_selections {
+  text-align: center;
+}
+
+.month_title {
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.previous_selection_list {
+  .previous_selection_list_item {
+    font-size: 20px;
+  }
+}
+
 
 footer {
   text-align: center;

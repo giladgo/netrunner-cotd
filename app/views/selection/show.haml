@@ -1,0 +1,6 @@
+- content_for :sub_header do
+  For
+  = @selection.printable_when
+= render partial: 'card/card', locals: {card: @selection.card}
+.previous_selections
+  = link_to 'Previous Selections', selection_index_path

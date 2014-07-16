@@ -1,5 +1,8 @@
 NetrunnerCotd::Application.routes.draw do
-  get '/card/cotd'
+  get '/selection/cotd', to: 'selection#cotd'
+
+  resources :selection, :only => [:index, :show]
+
   get '/card/:code', to: 'card#show'
-  get '/', to: redirect('/card/cotd')
+  get '/', to: redirect('/selection/cotd')
 end

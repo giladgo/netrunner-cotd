@@ -1,0 +1,10 @@
+%h1 Previous selections
+- @selections_by_month.each do |month, selections|
+  .month_title= month.strftime('%B %Y')
+  %ul.previous_selection_list
+    - selections.each do |selection|
+      %li.previous_selection_list_item
+        = link_to selection do
+          = selection.card.title
+          ='-'
+          = selection.printable_when
